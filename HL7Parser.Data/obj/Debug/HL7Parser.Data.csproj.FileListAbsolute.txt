@@ -10,3 +10,15 @@ C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.D
 C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.csproj.CopyComplete
 C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.dll
 C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\HL7Parser.Data.dll
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\HL7Parser.Data.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\HL7Parser.Models.dll
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Test Projects\HL7Parser\HL7Parser.Data\bin\Debug\HL7Parser.Models.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.csprojAssemblyReference.cache
+D:\Test Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.csproj.CoreCompileInputs.cache
+D:\Test Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.csproj.CopyComplete
+D:\Test Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.dll
+D:\Test Projects\HL7Parser\HL7Parser.Data\obj\Debug\HL7Parser.Data.pdb

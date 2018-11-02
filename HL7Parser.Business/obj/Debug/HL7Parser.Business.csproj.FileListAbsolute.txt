@@ -11,3 +11,19 @@ C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.B
 C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csproj.CopyComplete
 C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.dll
 C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Business.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Business.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Data.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Models.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\System.Net.Http.Formatting.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\System.Web.Http.WebHost.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\Newtonsoft.Json.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Data.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Models.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csprojAssemblyReference.cache
+D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csproj.CoreCompileInputs.cache
+D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csproj.CopyComplete
+D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.dll
+D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.pdb

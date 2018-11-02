@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Hl7Msh.cs" />
     <Compile Include="Hl7Pid.cs" />
+    <Compile Include="GetMshResponse.cs" />
+    <Compile Include="GetPidResponse.cs" />
+    <Compile Include="PostResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

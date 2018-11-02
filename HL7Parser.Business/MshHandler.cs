@@ -13,19 +13,32 @@ namespace HL7Parser.Business
     {
         private IDataProvider DataProvider;
         
-        public int SetMsh(Hl7Msh msh)
+        public PostResponse SetMsh(Hl7Msh msh)
         {
             int id = -1;
+            PostResponse objResponse = new PostResponse();
             if (DataProvider == null)
                 DataProvider = new DataProvider();
 
-            DataProvider.SetMsh(msh);
+            try
+            {
+                DataProvider.SetMsh(msh);
 
-            return id;
+                objResponse.Status = "Success";
+                //objResponse.Id =id;
+            }
+            catch (Exception ex)
+            {
+                objResponse.Status = "Failure";
+                objResponse.ResponseText = ex.Message;
+            }
+
+            return objResponse;
         }
 
-        public Hl7Msh GetMsh(int id)
+        public GetMshResponse GetMsh(int id)
         {
+            GetMshResponse objResponse = new GetMshResponse();
             Hl7Msh mshItem = null;
             try
             {
@@ -65,13 +78,17 @@ namespace HL7Parser.Business
                     mshItem.Msh18 = Convert.ToString(dr["MSH_18"]);
                     mshItem.Msh19 = Convert.ToString(dr["MSH_19"]);
                 }
+
+                objResponse.Status = "Success";
+                objResponse.Msh = mshItem;
             }
             catch (Exception ex)
             {
-
+                objResponse.Status = "Failure";
+                objResponse.ResponseText = ex.Message;
             }
 
-            return mshItem;
+            return objResponse;
         }
     }
 }

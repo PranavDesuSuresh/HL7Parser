@@ -13,19 +13,32 @@ namespace HL7Parser.Business
     {
         private IDataProvider DataProvider;
 
-        public int SetPid(Hl7Pid pid)
+        public PostResponse SetPid(Hl7Pid pid)
         {
             int id = -1;
+            PostResponse objResponse = new PostResponse();
             if (DataProvider == null)
                 DataProvider = new DataProvider();
 
-            DataProvider.SetPid(pid);
+            try
+            {
+                DataProvider.SetPid(pid);
 
-            return id;
+                objResponse.Status = "Success";
+                //objResponse.Id =id;
+            }
+            catch (Exception ex)
+            {
+                objResponse.Status = "Failure";
+                objResponse.ResponseText = ex.Message;
+            }
+
+            return objResponse;
         }
 
-        public Hl7Pid GetPid(int id)
+        public GetPidResponse GetPid(int id)
         {
+            GetPidResponse objResponse = new GetPidResponse();
             Hl7Pid pidItem = null;
             try
             {
@@ -98,13 +111,16 @@ namespace HL7Parser.Business
                     pidItem.Pid29 = Convert.ToString(dr["PID_29"]);
                     pidItem.Pid30 = Convert.ToString(dr["PID_30"]);
                 }
+                objResponse.Status = "Success";
+                objResponse.Pid = pidItem;
             }
             catch (Exception ex)
             {
-
+                objResponse.Status = "Failure";
+                objResponse.ResponseText = ex.Message;
             }
 
-            return pidItem;
+            return objResponse;
         }
     }
 }
