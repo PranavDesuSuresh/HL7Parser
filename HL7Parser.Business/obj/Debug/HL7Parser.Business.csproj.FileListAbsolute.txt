@@ -1,0 +1,13 @@
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Business.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Business.pdb
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Data.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Models.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Data.pdb
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Models.pdb
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csprojAssemblyReference.cache
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csproj.CoreCompileInputs.cache
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csproj.CopyComplete
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.pdb

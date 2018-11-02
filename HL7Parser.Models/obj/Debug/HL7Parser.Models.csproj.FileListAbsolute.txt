@@ -1,0 +1,6 @@
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Models\bin\Debug\HL7Parser.Models.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Models\bin\Debug\HL7Parser.Models.pdb
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.csprojAssemblyReference.cache
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.csproj.CoreCompileInputs.cache
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.dll
+C:\Users\pranav.desu\Documents\Visual Studio 2017\Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.pdb
