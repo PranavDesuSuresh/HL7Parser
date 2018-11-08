@@ -14,9 +14,10 @@ namespace HL7Parser.Services.Controllers
     public class PidController : ApiController
     {
         private IHl7Pid pidManager;
-        public PidController(IHl7Pid pidManager)
+        public PidController()
         {
-            this.pidManager = pidManager;
+            if (pidManager == null)
+                this.pidManager = new PidHandler();
         }
 
         [HttpPost]

@@ -9,6 +9,9 @@ namespace HL7Parser.Services
     {
         public static void Register(HttpConfiguration config)
         {
+            config.Formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+
             // Web API configuration and services
 
             // Web API routes

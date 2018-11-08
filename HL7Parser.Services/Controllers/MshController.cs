@@ -14,17 +14,18 @@ namespace HL7Parser.Services.Controllers
     public class MshController : ApiController
     {
         private IHl7Msh mshManager;
-        public MshController(IHl7Msh mshManager)
+        public MshController()
         {
-            this.mshManager = mshManager;
+            if(mshManager==null)
+                this.mshManager = new MshHandler();
         }
 
         [HttpPost]
         [ResponseType(typeof(PostResponse))]
-        public IHttpActionResult AddMsh(Hl7Msh msh)
+        public IHttpActionResult AddMsh(SetMshRequest msh)
         {
             if (msh != null)
-                return this.Ok(mshManager.SetMsh(msh));
+                return this.Ok(mshManager.SetMsh(msh.Params));
 
             throw new ApiException(HttpStatusCode.BadRequest
                 , "PID information cannot be empty"

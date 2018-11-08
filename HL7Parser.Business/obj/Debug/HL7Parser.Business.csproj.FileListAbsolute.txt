@@ -27,3 +27,5 @@ D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.cspro
 D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.csproj.CopyComplete
 D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.dll
 D:\Test Projects\HL7Parser\HL7Parser.Business\obj\Debug\HL7Parser.Business.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\HL7Parser.Business.dll.config
+D:\Test Projects\HL7Parser\HL7Parser.Business\bin\Debug\Newtonsoft.Json.xml

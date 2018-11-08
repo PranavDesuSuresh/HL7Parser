@@ -9,3 +9,4 @@ D:\Test Projects\HL7Parser\HL7Parser.Models\bin\Debug\HL7Parser.Models.pdb
 D:\Test Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.csproj.CoreCompileInputs.cache
 D:\Test Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.dll
 D:\Test Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Models\obj\Debug\HL7Parser.Models.csprojAssemblyReference.cache

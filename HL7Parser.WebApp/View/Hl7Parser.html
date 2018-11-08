@@ -1,0 +1,139 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../Style/Style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="../Javascript/Common.js"></script>
+</head>
+<body>
+    <div id="Header">
+        <table style="">
+            <tr>
+                <td><button type="button" onclick="mshShowSearch()" class="btn-style">MSH</button></td>
+                <td><button type="button" onclick="pidShowSearch()" class="btn-style">PID</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="MshSearch" style="display: none;">
+        <table style="" class="table-bg">
+            <tr>
+                <td>Search By Control-Id: <input type="text" name="txtControlId" class="input-box"></td>
+                <td><button type="button" onclick="showMshGrid()" class="btn-style">Search</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="PidSearch" style="display: none;">
+        <table class="table-bg">
+            <tr>
+                <td>Search By Patient-Id: <input type="text" name="txtPatientId" class="input-box"></td>
+                <td><button type="button" onclick="showPidGrid()" class="btn-style">Search</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="MshGrid" style="display: none;">
+        <table class="id-table">
+            <tr><td>ID</td><td><input type="text" name="txtId"></td>            </tr>
+            <tr><td>MSH.1</td><td><input type="text" name="txtMSH_1"></td>      </tr>
+            <tr><td>MSH.2</td><td><input type="text" name="txtMSH_2"></td>      </tr>
+            <tr><td>MSH.3.1 </td><td><input type="text" name="txtMSH_3_1"></td> </tr>
+            <tr><td>MSH.3.2 </td><td><input type="text" name="txtMSH_3_2"></td> </tr>
+            <tr><td>MSH.3.3 </td><td><input type="text" name="txtMSH_3_3"></td> </tr>
+            <tr><td>MSH.4.1 </td><td><input type="text" name="txtMSH_4_1"></td> </tr>
+            <tr><td>MSH.4.2 </td><td><input type="text" name="txtMSH_4_2"></td> </tr>
+            <tr><td>MSH.4.3 </td><td><input type="text" name="txtMSH_4_3"></td> </tr>
+            <tr><td>MSH.5.1 </td><td><input type="text" name="txtMSH_5_1"></td> </tr>
+            <tr><td>MSH.5.2 </td><td><input type="text" name="txtMSH_5_2"></td> </tr>
+            <tr><td>MSH.5.3 </td><td><input type="text" name="txtMSH_5_3"></td> </tr>
+            <tr><td>MSH.6.1 </td><td><input type="text" name="txtMSH_6_1"></td> </tr>
+            <tr><td>MSH.6.2 </td><td><input type="text" name="txtMSH_6_2"></td> </tr>
+            <tr><td>MSH.6.3 </td><td><input type="text" name="txtMSH_6_3"></td> </tr>
+            <tr><td>MSH.7</td><td><input type="text" name="txtMSH_7"></td>      </tr>
+            <tr><td>MSH.8</td><td><input type="text" name="txtMSH_8"></td>      </tr>
+            <tr><td>MSH.9.1 </td><td><input type="text" name="txtMSH_9_1"></td> </tr>
+            <tr><td>MSH.9.2 </td><td><input type="text" name="txtMSH_9_2"></td> </tr>
+            <tr><td>MSH.10</td><td><input type="text" name="txtMSH_10"></td>    </tr>
+            <tr><td>MSH.11.1</td><td><input type="text" name="txtMSH_11_1"></td></tr>
+            <tr><td>MSH.11.2</td><td><input type="text" name="txtMSH_11_2"></td></tr>
+            <tr><td>MSH.12</td><td><input type="text" name="txtMSH_12"></td>    </tr>
+            <tr><td>MSH.13</td><td><input type="text" name="txtMSH_13"></td>    </tr>
+            <tr><td>MSH.14</td><td><input type="text" name="txtMSH_14"></td>    </tr>
+            <tr><td>MSH.15</td><td><input type="text" name="txtMSH_15"></td>    </tr>
+            <tr><td>MSH.16</td><td><input type="text" name="txtMSH_16"></td>    </tr>
+            <tr><td>MSH.17</td><td><input type="text" name="txtMSH_17"></td>    </tr>
+            <tr><td>MSH.18</td><td><input type="text" name="txtMSH_18"></td>    </tr>
+            <tr><td>MSH.19</td><td><input type="text" name="txtMSH_19"></td>    </tr>
+        </table>
+    </div>
+
+    <div id="PidGrid" style="display: none;">
+        <table style="" class="id-table">
+            <tr><td>ID</td><td><input type="text" name="txtID"></td></tr>
+            <tr><td>Pid.1</td><td><input type="text" name="txtPid_1"></td></tr>
+            <tr><td>Pid.2</td><td><input type="text" name="txtPid_2"></td></tr>
+            <tr><td>Pid.3</td><td><input type="text" name="txtPid_3"></td></tr>
+            <tr><td>Pid.4</td><td><input type="text" name="txtPid_4"></td></tr>
+            <tr><td>Pid.5.1 </td><td><input type="text" name="txtPid_5_1"></td></tr>
+            <tr><td>Pid.5.2 </td><td><input type="text" name="txtPid_5_2"></td></tr>
+            <tr><td>Pid.5.3 </td><td><input type="text" name="txtPid_5_3"></td></tr>
+            <tr><td>Pid.5.4 </td><td><input type="text" name="txtPid_5_4"></td></tr>
+            <tr><td>Pid.5.5 </td><td><input type="text" name="txtPid_5_5"></td></tr>
+            <tr><td>Pid.5.6 </td><td><input type="text" name="txtPid_5_6"></td></tr>
+            <tr><td>Pid.6.1 </td><td><input type="text" name="txtPid_6_1"></td></tr>
+            <tr><td>Pid.6.2 </td><td><input type="text" name="txtPid_6_2"></td></tr>
+            <tr><td>Pid.6.3 </td><td><input type="text" name="txtPid_6_3"></td></tr>
+            <tr><td>Pid.6.4 </td><td><input type="text" name="txtPid_6_4"></td></tr>
+            <tr><td>Pid.6.5 </td><td><input type="text" name="txtPid_6_5"></td></tr>
+            <tr><td>Pid.6.6 </td><td><input type="text" name="txtPid_6_6"></td></tr>
+            <tr><td>Pid.6.7 </td><td><input type="text" name="txtPid_6_7"></td></tr>
+            <tr><td>Pid.7</td><td><input type="text" name="txtPid_7"></td></tr>
+            <tr><td>Pid.8</td><td><input type="text" name="txtPid_8"></td></tr>
+            <tr><td>Pid.9.1 </td><td><input type="text" name="txtPid_9_1"></td></tr>
+            <tr><td>Pid.9.2 </td><td><input type="text" name="txtPid_9_2"></td></tr>
+            <tr><td>Pid.9.3 </td><td><input type="text" name="txtPid_9_3"></td></tr>
+            <tr><td>Pid.9.4 </td><td><input type="text" name="txtPid_9_4"></td></tr>
+            <tr><td>Pid.9.5 </td><td><input type="text" name="txtPid_9_5"></td></tr>
+            <tr><td>Pid.9.6 </td><td><input type="text" name="txtPid_9_6"></td></tr>
+            <tr><td>Pid.9.7 </td><td><input type="text" name="txtPid_9_7"></td></tr>
+            <tr><td>Pid.10  </td><td><input type="text" name="txtPid_10"></td></tr>
+            <tr><td>Pid.11.1</td><td><input type="text" name="txtPid_11_1"></td></tr>
+            <tr><td>Pid.11.2</td><td><input type="text" name="txtPid_11_2"></td></tr>
+            <tr><td>Pid.11.3</td><td><input type="text" name="txtPid_11_3"></td></tr>
+            <tr><td>Pid.11.4</td><td><input type="text" name="txtPid_11_4"></td></tr>
+            <tr><td>Pid.11.5</td><td><input type="text" name="txtPid_11_5"></td></tr>
+            <tr><td>Pid.11.6</td><td><input type="text" name="txtPid_11_6"></td></tr>
+            <tr><td>Pid.11.7</td><td><input type="text" name="txtPid_11_7"></td></tr>
+            <tr><td>Pid.11.8</td><td><input type="text" name="txtPid_11_8"></td></tr>
+            <tr><td>Pid.11.9</td><td><input type="text" name="txtPid_11_9"></td></tr>
+            <tr><td>Pid.12  </td><td><input type="text" name="txtPid_12"></td></tr>
+            <tr><td>Pid.13.1</td><td><input type="text" name="txtPid_13_1"></td></tr>
+            <tr><td>Pid.13.2</td><td><input type="text" name="txtPid_13_2"></td></tr>
+            <tr><td>Pid.13.3</td><td><input type="text" name="txtPid_13_3"></td></tr>
+            <tr><td>Pid.13.4</td><td><input type="text" name="txtPid_13_4"></td></tr>
+            <tr><td>Pid.14.1</td><td><input type="text" name="txtPid_14_1"></td></tr>
+            <tr><td>Pid.14.2</td><td><input type="text" name="txtPid_14_2"></td></tr>
+            <tr><td>Pid.14.3</td><td><input type="text" name="txtPid_14_3"></td></tr>
+            <tr><td>Pid.14.4</td><td><input type="text" name="txtPid_14_4"></td></tr>
+            <tr><td>Pid.15.1</td><td><input type="text" name="txtPid_15_1"></td></tr>
+            <tr><td>Pid.15.2</td><td><input type="text" name="txtPid_15_2"></td></tr>
+            <tr><td>Pid.16  </td><td><input type="text" name="txtPid_16"></td></tr>
+            <tr><td>Pid.17  </td><td><input type="text" name="txtPid_17"></td></tr>
+            <tr><td>Pid.18  </td><td><input type="text" name="txtPid_18"></td></tr>
+            <tr><td>Pid.19  </td><td><input type="text" name="txtPid_19"></td></tr>
+            <tr><td>Pid.20  </td><td><input type="text" name="txtPid_20"></td></tr>
+            <tr><td>Pid.21  </td><td><input type="text" name="txtPid_21"></td></tr>
+            <tr><td>Pid.22  </td><td><input type="text" name="txtPid_22"></td></tr>
+            <tr><td>Pid.23  </td><td><input type="text" name="txtPid_23"></td></tr>
+            <tr><td>Pid.24  </td><td><input type="text" name="txtPid_24"></td></tr>
+            <tr><td>Pid.25  </td><td><input type="text" name="txtPid_25"></td></tr>
+            <tr><td>Pid.26  </td><td><input type="text" name="txtPid_26"></td></tr>
+            <tr><td>Pid.27  </td><td><input type="text" name="txtPid_27"></td></tr>
+            <tr><td>Pid.28  </td><td><input type="text" name="txtPid_28"></td></tr>
+            <tr><td>Pid.29  </td><td><input type="text" name="txtPid_29"></td></tr>
+            <tr><td>Pid.30  </td><td><input type="text" name="txtPid_30"></td></tr>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\HL7Parser.Batch.exe.config
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\HL7Parser.Batch.exe
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\HL7Parser.Batch.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\HL7Parser.Models.dll
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\HL7Parser.Models.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Batch\obj\Debug\HL7Parser.Batch.csprojAssemblyReference.cache
+D:\Test Projects\HL7Parser\HL7Parser.Batch\obj\Debug\HL7Parser.Batch.csproj.CoreCompileInputs.cache
+D:\Test Projects\HL7Parser\HL7Parser.Batch\obj\Debug\HL7Parser.Batch.csproj.CopyComplete
+D:\Test Projects\HL7Parser\HL7Parser.Batch\obj\Debug\HL7Parser.Batch.exe
+D:\Test Projects\HL7Parser\HL7Parser.Batch\obj\Debug\HL7Parser.Batch.pdb
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\Newtonsoft.Json.dll
+D:\Test Projects\HL7Parser\HL7Parser.Batch\bin\Debug\Newtonsoft.Json.xml

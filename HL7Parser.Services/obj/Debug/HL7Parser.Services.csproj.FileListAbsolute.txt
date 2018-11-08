@@ -152,3 +152,4 @@ D:\Test Projects\HL7Parser\HL7Parser.Services\bin\System.Web.Http.WebHost.xml
 D:\Test Projects\HL7Parser\HL7Parser.Services\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Test Projects\HL7Parser\HL7Parser.Services\bin\HL7Parser.Data.pdb
 D:\Test Projects\HL7Parser\HL7Parser.Services\obj\Debug\HL7Parser.Services.csproj.CopyComplete
+D:\Test Projects\HL7Parser\HL7Parser.Services\bin\HL7Parser.Business.dll.config
