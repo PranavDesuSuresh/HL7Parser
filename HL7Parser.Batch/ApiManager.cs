@@ -20,9 +20,15 @@ namespace HL7Parser.Batch
                 "application/json");
         }
 
-        public void PostPid()
+        public void PostPid(Hl7Pid pid, string url)
         {
+            ApiResponse apiResponse = new ApiResponse();
 
+            SetPidRequest objRequest = new SetPidRequest();
+            objRequest.Params = pid;
+
+            apiResponse = ApiCommunicator.CallApi(url, JsonHelper.ConvertToJson(objRequest), "POST",
+                "application/json");
         }
     }
 }

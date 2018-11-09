@@ -31,40 +31,77 @@ namespace HL7Parser.Batch
 
         public void convertToHL7(string filePath)
         {
-            string readContents = "";
-            using (StreamReader streamReader = new StreamReader(filePath))
+            try
             {
-                readContents = streamReader.ReadToEnd();
-            }
-
-            var hl7Msg = readContents.Split(new string[] { "\r\n" }, StringSplitOptions.None).Select(x => x.Split('|')).ToArray();
-
-            foreach (var seg in hl7Msg)
-            {
-                if (seg != null && seg.Length > 0)
+                string readContents = "";
+                using (StreamReader streamReader = new StreamReader(filePath))
                 {
-                    Hl7Msh msh = new Hl7Msh();
-                    Hl7Pid pid = new Hl7Pid();
-                    switch (seg[0])
-                    {
-                        case "MSH":
-                            msh = ConvertToMsh(seg);
-                            break;
-                        case "PID":
-                            pid = ConvertToPid(seg);
-                            break;
-                        default:
-                            break;
-                    }
-
-                    //if (msh != null) ;
-                    ApiManager apiManager = new ApiManager();
-                    apiManager.PostMsh(msh, ConfigManager.ApiUrl + "msh/AddMsh/");
+                    readContents = streamReader.ReadToEnd();
                 }
+
+                var hl7Msg = readContents.Split(new string[] { "\r\n" }, StringSplitOptions.None)
+                    .Select(x => x.Split('|')).ToArray();
+
+                Hl7Msh msh = null;
+                Hl7Pid pid = null;
+                foreach (var seg in hl7Msg)
+                {
+                    if (seg != null && seg.Length > 0)
+                    {
+                        switch (seg[0])
+                        {
+                            case "MSH":
+                                msh = ConvertToMsh(seg);
+                                break;
+                            case "PID":
+                                pid = ConvertToPid(seg);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+
+                //if (msh != null) ;
+                ApiManager apiManager = new ApiManager();
+
+
+                if (pid != null)
+                {
+                    if (msh != null)
+                        msh.PatientId = pid.PatientId;
+                    apiManager.PostPid(pid, ConfigManager.ApiUrl + "pid/AddPid");
+                }
+
+                if (msh != null)
+                    apiManager.PostMsh(msh, ConfigManager.ApiUrl + "msh/AddMsh");
+
+                string fileName = Path.GetFileName(filePath);
+                File.Copy(filePath, ConfigManager.FilePath + "\\Processed\\" + fileName, true);
+                File.Delete(filePath);
+                //if (File.Exists(ConfigManager.FilePath + "\\Processed\\" + fileName))
+                //{
+                //    File.Delete(ConfigManager.FilePath + "\\Processed\\" + fileName);
+                //}
+
+                //File.Move(filePath, ConfigManager.FilePath + "\\Processed\\" + fileName);
+                
+            }
+            catch (Exception ex)
+            {
+                string fileName = Path.GetFileName(filePath);
+                File.Copy(filePath, ConfigManager.FilePath + "\\Error\\" + fileName, true);
+                File.Delete(filePath);
+                //if (File.Exists(ConfigManager.FilePath + "\\Error\\" + fileName))
+                //{
+                //    File.Delete(ConfigManager.FilePath + "\\Error\\" + fileName);
+                //}
+                //File.Move(filePath, ConfigManager.FilePath + "\\Error\\" + fileName);
+                //Add exception file as well.
             }
         }
 
-        public Hl7Msh ConvertToMsh(string[] msh)
+        private Hl7Msh ConvertToMsh(string[] msh)
         {
             Hl7Msh mshSeg = new Hl7Msh();
             mshSeg.Msh1 = GetArrayElement(msh, 1);
@@ -112,9 +149,10 @@ namespace HL7Parser.Batch
             return mshSeg;
         }
 
-        public Hl7Pid ConvertToPid(string[] pid)
+        private Hl7Pid ConvertToPid(string[] pid)
         {
             Hl7Pid pidSeg = new Hl7Pid();
+            pidSeg.PatientId = Convert.ToInt32(GetArrayElement(pid, 2));
             pidSeg.Pid1 = GetArrayElement(pid, 1);
             pidSeg.Pid2 = GetArrayElement(pid, 2);
             pidSeg.Pid3 = GetArrayElement(pid, 3);

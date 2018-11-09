@@ -45,9 +45,6 @@
     <Compile Include="ApiResponse.cs" />
     <Compile Include="Hl7Msh.cs" />
     <Compile Include="Hl7Pid.cs" />
-    <Compile Include="GetMshResponse.cs" />
-    <Compile Include="GetPidResponse.cs" />
-    <Compile Include="PostResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetMshRequest.cs" />
     <Compile Include="SetPidRequest.cs" />

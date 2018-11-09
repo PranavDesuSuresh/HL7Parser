@@ -14,6 +14,6 @@ namespace HL7Parser.Models
 
         public string ResponseText { get; set; }
 
-        public Hl7Msh Msh { get; set; }
+        public Hl7Msh Message { get; set; }
     }
 }

@@ -14,6 +14,6 @@ namespace HL7Parser.Models
 
         public string ResponseText { get; set; }
 
-        public Hl7Pid Pid { get; set; }
+        public Hl7Pid Message { get; set; }
     }
 }

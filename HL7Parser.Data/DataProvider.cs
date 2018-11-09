@@ -70,6 +70,7 @@ namespace HL7Parser.Data
                 using (DbCommand spCommand = database.GetStoredProcCommand("SetPid"))
                 {
                     database.AddInParameter(spCommand, "@ID", DbType.Int32, pidContent.ID);
+                    database.AddInParameter(spCommand, "@PatientID", DbType.Int32, pidContent.PatientId);
                     database.AddInParameter(spCommand, "@PID_1 ", DbType.String, pidContent.Pid1);
                     database.AddInParameter(spCommand, "@PID_2", DbType.String, pidContent.Pid2);
                     database.AddInParameter(spCommand, "@PID_3 ", DbType.String, pidContent.Pid3);
@@ -154,6 +155,7 @@ namespace HL7Parser.Data
                 using (DbCommand spCommand = database.GetStoredProcCommand("SetMsh"))
                 {
                     database.AddInParameter(spCommand, "@ID", DbType.Int32, mshContent.ID);
+                    database.AddInParameter(spCommand, "@PatientID", DbType.Int32, mshContent.PatientId);
                     database.AddInParameter(spCommand, "@MSH_1", DbType.String, mshContent.Msh1);
                     database.AddInParameter(spCommand, "@MSH_2", DbType.String, mshContent.Msh2);
                     database.AddInParameter(spCommand, "@MSH_3_1", DbType.String, mshContent.Msh3_1);

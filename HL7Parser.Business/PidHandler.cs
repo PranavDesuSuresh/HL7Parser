@@ -13,10 +13,9 @@ namespace HL7Parser.Business
     {
         private IDataProvider DataProvider;
 
-        public PostResponse SetPid(Hl7Pid pid)
+        public int SetPid(Hl7Pid pid)
         {
             int id = -1;
-            PostResponse objResponse = new PostResponse();
             if (DataProvider == null)
                 DataProvider = new DataProvider();
 
@@ -24,21 +23,21 @@ namespace HL7Parser.Business
             {
                 DataProvider.SetPid(pid);
 
-                objResponse.Status = "Success";
                 //objResponse.Id =id;
             }
             catch (Exception ex)
             {
-                objResponse.Status = "Failure";
-                objResponse.ResponseText = ex.Message;
+                throw ex;
             }
 
-            return objResponse;
+            return id;
         }
 
-        public GetPidResponse GetPid(int id)
+        public Hl7Pid GetPid(int id)
         {
-            GetPidResponse objResponse = new GetPidResponse();
+            if (DataProvider == null)
+                DataProvider = new DataProvider();
+
             Hl7Pid pidItem = null;
             try
             {
@@ -48,7 +47,8 @@ namespace HL7Parser.Business
                     DataRow dr = dtPid.Rows[0];
                     pidItem = new Hl7Pid
                     {
-                        ID = Convert.ToInt32(dr["ID"]),
+                        //ID = Convert.ToInt32(dr["ID"]),
+                        PatientId = Convert.ToInt32(dr["PatientID"]),
                         Pid1 = Convert.ToString(dr["PID_1"]),
                         Pid2 = Convert.ToString(dr["PID_2"]),
                         Pid3 = Convert.ToString(dr["PID_3"]),
@@ -113,16 +113,13 @@ namespace HL7Parser.Business
                         Pid30 = Convert.ToString(dr["PID_30"])
                     };
                 }
-                objResponse.Status = "Success";
-                objResponse.Pid = pidItem;
             }
             catch (Exception ex)
             {
-                objResponse.Status = "Failure";
-                objResponse.ResponseText = ex.Message;
+                throw ex;
             }
 
-            return objResponse;
+            return pidItem;
         }
     }
 }

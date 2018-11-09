@@ -21,7 +21,7 @@ namespace HL7Parser.Services.Controllers
         }
 
         [HttpPost]
-        [ResponseType(typeof(PostResponse))]
+        [ResponseType(typeof(ApiResponse))]
         public IHttpActionResult AddMsh(SetMshRequest msh)
         {
             if (msh != null)
@@ -34,7 +34,7 @@ namespace HL7Parser.Services.Controllers
         }
 
         [HttpGet]
-        [ResponseType(typeof(GetMshResponse))]
+        [ResponseType(typeof(ApiResponse))]
         public IHttpActionResult GetMsh(int id)
         {
             if (id != 0)

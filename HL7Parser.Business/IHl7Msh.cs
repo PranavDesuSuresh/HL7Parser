@@ -9,8 +9,8 @@ namespace HL7Parser.Business
 {
     public interface IHl7Msh
     {
-        PostResponse SetMsh(Hl7Msh msh);
+        int SetMsh(Hl7Msh msh);
 
-        GetMshResponse GetMsh(int id);
+        Hl7Msh GetMsh(int id);
     }
 }

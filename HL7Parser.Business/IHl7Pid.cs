@@ -9,8 +9,8 @@ namespace HL7Parser.Business
 {
     public interface IHl7Pid
     {
-        PostResponse SetPid(Hl7Pid pid);
+        int SetPid(Hl7Pid pid);
 
-        GetPidResponse GetPid(int id);
+        Hl7Pid GetPid(int id);
     }
 }

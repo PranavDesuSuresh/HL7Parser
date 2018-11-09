@@ -1,0 +1,11 @@
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\bin\Debug\HL7Parser.WebAppBusiness.dll
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\bin\Debug\HL7Parser.WebAppBusiness.pdb
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\bin\Debug\HL7Parser.Models.dll
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\bin\Debug\HL7Parser.Models.pdb
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\obj\Debug\HL7Parser.WebAppBusiness.csprojAssemblyReference.cache
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\obj\Debug\HL7Parser.WebAppBusiness.csproj.CoreCompileInputs.cache
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\obj\Debug\HL7Parser.WebAppBusiness.csproj.CopyComplete
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\obj\Debug\HL7Parser.WebAppBusiness.dll
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\obj\Debug\HL7Parser.WebAppBusiness.pdb
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\bin\Debug\Newtonsoft.Json.dll
+D:\Test Projects\HL7Parser\HL7Parser.WebAppBusiness\bin\Debug\Newtonsoft.Json.xml

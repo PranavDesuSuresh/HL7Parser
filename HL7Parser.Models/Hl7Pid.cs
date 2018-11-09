@@ -13,6 +13,9 @@ namespace HL7Parser.Models
         [DataMember(Name = "ID")]
         public int ID { get; set; }
 
+        [DataMember(Name = "PatientID")]
+        public int PatientId { get; set; }
+
         [DataMember(Name = "Pid1")]
         public string Pid1 { get; set; }
 

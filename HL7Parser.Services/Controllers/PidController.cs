@@ -21,11 +21,11 @@ namespace HL7Parser.Services.Controllers
         }
 
         [HttpPost]
-        [ResponseType(typeof(PostResponse))]
-        public IHttpActionResult AddPid(Hl7Pid pid)
+        [ResponseType(typeof(ApiResponse))]
+        public IHttpActionResult AddPid(SetPidRequest pid)
         {
             if (pid != null)
-                return this.Ok(pidManager.SetPid(pid));
+                return this.Ok(pidManager.SetPid(pid.Params));
 
             throw new ApiException(HttpStatusCode.BadRequest
                 , "PID information cannot be empty"
@@ -34,7 +34,7 @@ namespace HL7Parser.Services.Controllers
         }
 
         [HttpGet]
-        [ResponseType(typeof(GetPidResponse))]
+        [ResponseType(typeof(ApiResponse))]
         public IHttpActionResult GetPid(int id)
         {
             if (id != 0)
